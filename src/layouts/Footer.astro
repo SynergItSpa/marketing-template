@@ -2,34 +2,33 @@
 import GroupFooterNav from "../components/blocks/GroupFooterNav.astro";
 import Container from "../components/shared/Container.astro";
 import FooterNav from "../components/shared/FooterNav.astro";
-import Paragraph from "../components/shared/Paragraph.astro";
 
 const footerNav1 = [
   {
-    itemText: "Marketing",
+    itemText: "Templates",
     itemLink: "#",
   },
   {
-    itemText: "Analylitics",
+    itemText: "Diseños",
     itemLink: "#",
   },
   {
-    itemText: "Commerce",
+    itemText: "Personalizacion",
     itemLink: "#",
   },
   {
-    itemText: "Insights",
+    itemText: "Optimización",
     itemLink: "#",
   },
 ];
 
 const footerSupport = [
   {
-    itemText: "Pricing",
+    itemText: "Precios",
     itemLink: "#",
   },
   {
-    itemText: "Guides",
+    itemText: "Guías",
     itemLink: "#",
   },
   {
@@ -37,14 +36,14 @@ const footerSupport = [
     itemLink: "#",
   },
   {
-    itemText: "Contact",
+    itemText: "Contacto",
     itemLink: "#",
   },
 ];
 
 const footerCompany = [
   {
-    itemText: "About",
+    itemText: "Nosotros",
     itemLink: "#",
   },
   {
@@ -52,29 +51,29 @@ const footerCompany = [
     itemLink: "#",
   },
   {
-    itemText: "Jobs",
+    itemText: "Casos Éxito",
     itemLink: "#",
   },
   {
-    itemText: "Parteners",
+    itemText: "Socios",
     itemLink: "#",
   },
   {
-    itemText: "Jobs",
+    itemText: "Carrera",
     itemLink: "#",
   },
 ];
 const footerLegal = [
   {
-    itemText: "Claim",
+    itemText: "Reclamos",
     itemLink: "#",
   },
   {
-    itemText: "Privacy",
+    itemText: "Privacidad",
     itemLink: "#",
   },
   {
-    itemText: "Terms",
+    itemText: "Términos",
     itemLink: "#",
   },
 ];
@@ -106,15 +105,17 @@ const footerLegal = [
       >
         <div class="col-span-2 lg:col-span-1 h-auto flex flex-col">
           <div class="h-full">
-            <a href="#" class="relative flex items-center gap-3">
-              <div class="inline-flex text-lg font-semibold text-heading-1">
-                AgenceX
-              </div>
-            </a>
-            <Paragraph className={"mt-8"}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
-              maiores nam doloribus id magni
-            </Paragraph>
+            <div class="space-y-4">
+              <a href="https://be.synergit.cl/#contacto/" class="flex items-center space-x-2 w-fit">
+                <div class="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-md flex items-center justify-center">
+                  <span class="text-white font-bold text-sm">S</span>
+                </div>
+                <span class="font-bold text-xl bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">SynergIT</span>
+              </a>
+              <p class="text-gray-600 dark:text-gray-300">
+                Desarrollamos el futuro digital de tu empresa con tecnología de vanguardia.
+              </p>
+            </div>
           </div>
 
           <!-- social links -->
@@ -186,13 +187,13 @@ const footerLegal = [
         </div>
 
         <GroupFooterNav>
-          <FooterNav title={"Company"} navItems={footerCompany} />
-          <FooterNav title={"Solutions"} navItems={footerNav1} />
+          <FooterNav title={"Empresa"} navItems={footerCompany} />
+          <FooterNav title={"Productos"} navItems={footerNav1} />
         </GroupFooterNav>
 
         <GroupFooterNav>
-          <FooterNav title={"Support"} navItems={footerSupport} />
-          <FooterNav title={"Ressources"} navItems={footerLegal} />
+          <FooterNav title={"Soporte"} navItems={footerSupport} />
+          <FooterNav title={"Recursos"} navItems={footerLegal} />
         </GroupFooterNav>
       </div>
     </Container>
@@ -202,13 +203,13 @@ const footerLegal = [
           class="flex justify-between items-center gap-6 md:text-lg text-heading-3"
         >
           <div>
-            &copy; <span id="year"></span> AgenceX. All right reserved
+            &copy; <span id="year"></span> SynergIT. Todos los derechos reservados
           </div>
           <div>
-            Made by <a
-              href="https://github.com/vbartalis"
+            Hecho con ❤️ por <a
+              href="https://synergitspa.com"
               target="_blank"
-              class="font-semibold">vbartalis</a
+              class="font-semibold">SynergIT</a
             >
           </div>
         </div>
